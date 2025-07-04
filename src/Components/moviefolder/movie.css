@@ -1,0 +1,46 @@
+.main-container{
+    display: block;
+}
+
+.moviedetails{
+    color:white;
+    display: flex;
+    margin-left:50px;
+    margin-top:50px;
+}
+
+.moviedetails img{
+    border-radius:10px;
+    border: 1px solid red;
+    margin-right: 30px;
+}
+
+.movieITems h2, h4{
+    text-align: left;
+    font-weight:400;
+}
+
+button{
+    width: 90px;
+    height:30px;
+    border-radius: 5px;
+    color: orange;
+    background-color: black;
+    border: 1px solid red;
+    cursor: pointer;
+    margin-top:240px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+button:hover{
+    background-color: rgb(86, 54, 54);
+}
+
+.moreButton{
+    width: 150px;
+    text-align: center;
+    font-size:17px;
+    padding-left: 25px;
+}
