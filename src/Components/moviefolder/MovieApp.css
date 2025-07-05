@@ -272,14 +272,16 @@ h1 {
   border-radius: 10px;
   font-weight: 700;
   font-size: 20px;
-  background-color: black;
+  background-color: rgb(81, 56, 56);
+  border: 2px solid black;
   color: white;
+  margin-top: 20px;
 }
 
 .moreButton:hover{
-  color: black;
-  background-color: #556875;
-  border: 2px solid black;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
 }
 
 .results{
@@ -295,6 +297,5 @@ h1 {
 .results h4{
   font-size: 18px;
   font-weight: 300;
-    text-align: center;
-
+  text-align: center;
 }

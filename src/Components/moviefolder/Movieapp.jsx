@@ -121,17 +121,17 @@ function Movieapp() {
           )
         }
 
-      
-
-      </div>
-      
-    </div>
-    <div className='extrabutton'>
+        <div className='extrabutton'>
         {/* adding a limit to the number of movies displayed */}
         {limit < movies?.length && (
             <button onClick={()=> setLimit(limit + 6)} className='moreButton'>more movies</button>
         )}
       </div><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+      </div>
+      
+    </div>
     </div>
   )
 }
