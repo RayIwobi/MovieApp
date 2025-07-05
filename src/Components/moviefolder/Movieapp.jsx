@@ -18,7 +18,7 @@ function Movieapp() {
     const [movies, setMovies] = useState([]);
     const [SearchTerm, setSearchTerm] = useState();
 
-    const [limit, setLimit] = useState(4)
+    const [limit, setLimit] = useState(6)
 
 
     const API_URL = 'https://www.omdbapi.com?apikey=fbbceb8';
@@ -77,20 +77,28 @@ function Movieapp() {
     return (
     <div className='app'>
       <h1>MoviePlace</h1>
-      <h4 style={{color:'white'}}>This is a movie app that demonstrates the use of a movie api to display content based on search</h4>
+      <h4 style={{color:'white', fontSize:'17px'}}>This is a movie app that demonstrates the use of a movie api to display content based on search</h4>
 
-      <div className='search input'>
+      <div className='searchPlace'>
         <input type='text' placeholder='search for movies' value={SearchTerm} onChange={handleChange}/>
         <img src={searchn} alt='search' onClick={handleSearch}/>
       </div>
 
       <div className='search'>
       <div className='container2'>
-        
+         
         {
           movies?.length > 0 ?
-          (<div className='container'>
+          
+          (<div>
+            <div className='results'>
+                <h3>Results...</h3>
+                <h4>Use the more button to load more</h4>
+            </div>
+
+            <div className='container'>
             {movies.slice(0, limit).map((movie) => {
+             
               return <div key={movie.imdbID}>
                 <Link 
                   to={`/movie/${movie.imdbID}`}
@@ -102,6 +110,7 @@ function Movieapp() {
                 </Link>
                 </div>
             })}
+            </div>
              
           </div>
           ):
@@ -111,15 +120,18 @@ function Movieapp() {
             </div>
           )
         }
+
+      
+
       </div>
       
     </div>
-    <div style={{marginTop:'-250px', marginBottom:'100px'}}>
-       {/* adding a limit to the number of movies displayed */}
-      {limit < movies.length && (
-          <button onClick={()=> setLimit(limit + 4)} className='moreButton'>more movies</button>
-      )}
-      </div>
+    <div className='extrabutton'>
+        {/* adding a limit to the number of movies displayed */}
+        {limit < movies?.length && (
+            <button onClick={()=> setLimit(limit + 6)} className='moreButton'>more movies</button>
+        )}
+      </div><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
   )
 }

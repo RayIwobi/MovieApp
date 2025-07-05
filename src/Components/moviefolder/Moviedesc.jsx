@@ -18,7 +18,7 @@ function Moviedesc() {
 
   return (
     <div className='main-container'>
-        <div>Consume content</div>
+        <div style={{color:'white', fontSize:'20px', marginTop:'30px'}}>Consume content</div>
         <div className='moviedetails'>
         <div>
             <img src={movie.Poster} alt='the movie'/>
@@ -29,8 +29,8 @@ function Moviedesc() {
             <h4>Year: {movie.Year}</h4><br/>
             <h4>Description: no description from API</h4>
 
-            <div className='button'>
-            <button onClick={() => navigate(-1)}>Back</button>
+            <div >
+            <button onClick={() => navigate(-1)} className='addButton'>Back</button>
             </div>
         </div>
         </div>

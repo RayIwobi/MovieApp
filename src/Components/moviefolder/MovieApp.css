@@ -14,7 +14,7 @@
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  background-color: #556875;
 }
 
 .app {
@@ -25,6 +25,8 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+
 
 h1 {
   font-size: 3rem;
@@ -41,7 +43,7 @@ h1 {
 }
 
 .search {
-  width: 100%;
+  width: 80%;
   margin: 4rem 0 2rem;
 
 
@@ -56,13 +58,13 @@ h1 {
   box-shadow: 5px 5px 2px #1c1d1f, -5px -5px 7px #222527;
 }
 
-.search input {
+.searcharea {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-left: 20px;
   
-  width: 80%;
+  width: 50%;
   border-radius: 10px;
   border: none;
   font-size: 1.5rem;
@@ -75,31 +77,46 @@ h1 {
   background: #202224;
 }
 
-.search img {
+.searchPlace{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.searchPlace input{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  font-family: "Libre Baskerville";
+  font-weight: 100;
+  border-radius: 20px;
+  outline: none;
+  background-color: #1f2123;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+
+.searchPlace img{
   width: 25px;
   height: 25px;
   cursor: pointer;
+  margin-top: 30px;
+  position: absolute;
+  margin-left: 42%;
+}
 
+@media screen and (max-width: 600px){
+  .searchPlace img{
+  margin-left: 38%;
+  }
 }
 
 .movietitle{
   color:white;
 } 
 
-/* .search button {
-  padding: 20px 40px;
-  border-radius: 0.5rem;
-  margin-left: 15px;
-  color: #a1a1a1;
-  font-family: var(--font-raleway);
-  font-weight: 900;
-  letter-spacing: 0.75px;
-  font-size: 1.25rem;
-  cursor: pointer;
-  background: #1f2123;
-  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-} */
 
 .empty {
   width: 100%;
@@ -242,4 +259,42 @@ h1 {
     width: "100%";
     margin: 1rem;
   }
+}
+
+.extrabutton{
+  display: flex;
+  justify-content: center;
+}
+
+.moreButton{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.moreButton:hover{
+  color: black;
+  background-color: #556875;
+  border: 2px solid black;
+}
+
+.results{
+  color: white;
+  margin-bottom: -50px;
+}
+
+.results h3{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.results h4{
+  font-size: 18px;
+  font-weight: 300;
+    text-align: center;
+
 }

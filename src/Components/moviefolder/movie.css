@@ -20,27 +20,21 @@
     font-weight:400;
 }
 
-button{
-    width: 90px;
-    height:30px;
-    border-radius: 5px;
-    color: orange;
-    background-color: black;
-    border: 1px solid red;
-    cursor: pointer;
-    margin-top:240px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-button:hover{
-    background-color: rgb(86, 54, 54);
+.addButton{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  margin-top: 200px;
 }
 
-.moreButton{
-    width: 150px;
-    text-align: center;
-    font-size:17px;
-    padding-left: 25px;
+.addButton:hover{
+  color: black;
+  background-color: #556875;
+  border: 2px solid black;
 }
+
+
